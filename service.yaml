@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ku
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ku
+  template:
+    metadata:
+      labels:
+        app: ku
+    spec:
+      containers:
+        - name: ku
+          image: bommidisravani/check:2
+          ports:
+            - containerPort: 80
+            
