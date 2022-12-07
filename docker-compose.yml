@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+      image: bommidisravani/check:1
+      ports:
+        - 8001:80
+   mongodb:
+      image: mongo:latest
+      ports:
+        - 8002:80
+
