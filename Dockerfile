@@ -1,5 +1,5 @@
-FROM openjdk:8 
+FROM openjdk
 COPY target/*.jar /
 EXPOSE 80
-ENTRYPOINT ["java","-jar","/myrepoapp-1.jar"]
+ENTRYPOINT ["java","-jar","/my-app-1.0-SNAPSHOT.jar"]
  
