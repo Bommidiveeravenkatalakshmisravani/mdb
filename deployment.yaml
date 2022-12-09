@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ku
-          image: bommidisravani/check:3
+          image: bommidisravani/aq:6
           ports:
             - containerPort: 80
             
